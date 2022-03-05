@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/style.css?_v=20220305131833" />
+    <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
+    <title>JavaScript | WEB-технологии</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <div class="header__menu menu">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li><a class="menu__link" href="https://nialko.ru/" target="_blank">Автор</a></li>
+                  <li class="menu__item">
+                    <button class="menu__btn" type="button">
+                      Навигация
+                      <svg viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill="currentColor"
+                          d="M12.4697 0.46967C12.1768 0.762563 12.1768 1.23744 12.4697 1.53033L17.1893 6.25H1C0.585787 6.25 0.25 6.58579 0.25 7C0.25 7.41421 0.585787 7.75 1 7.75H17.1893L12.4697 12.4697C12.1768 12.7626 12.1768 13.2374 12.4697 13.5303C12.7626 13.8232 13.2374 13.8232 13.5303 13.5303L19.5303 7.53033C19.8232 7.23744 19.8232 6.76256 19.5303 6.46967L13.5303 0.46967C13.2374 0.176777 12.7626 0.176777 12.4697 0.46967Z"
+                        />
+                      </svg>
+                    </button>
+                    <ol class="menu__sub-list">
+                      <li><a class="menu__sub-link" href="#web">WEB-технологии</a></li>
+                      <li><a class="menu__sub-link" href="#java_script">JavaScript - это...</a></li>
+                      <li><a class="menu__sub-link" href="#ECMA_script">ECMAScript</a></li>
+                      <li><a class="menu__sub-link" href="#java_script_and_java">JavaScript и Java</a></li>
+                      <li><a class="menu__sub-link" href="#practice">Как насчёт практики?</a></li>
+                    </ol>
+                  </li>
+                </ul>
+              </nav>
+              <div class="menu__theme-site theme-site">
+                <div class="theme-site__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      fill="currentColor"
+                      d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"
+                    />
+                  </svg>
+                </div>
+
+                <div class="theme-site__toggler"></div>
+                <div class="theme-site__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      fill="currentColor"
+                      d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <button class="menu__icon icon-menu" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-page">
+        <h1 class="main-page__title __containers">JavaScript, как WEB-технология</h1>
+        <section class="about-web about-web__container">
+          <div class="about-web__body">
+            <h2 class="about-web__title __h2" id="web">Что такое WEB-технологии?</h2>
+            <p class="about-web__text __text">
+              Под «веб-технологиями» обычно подразумеваются
+              <a
+                class="about-web__link __link"
+                href="https://ru.wikipedia.org/wiki/Язык_разметки"
+                title="Ссылка ведёт на wikipedia"
+                target="_blank"
+              >
+                языки разметки </a
+              >,
+              <a
+                class="about-web__link __link"
+                href="https://ru.wikipedia.org/wiki/Язык_программирования"
+                title="Ссылка ведёт на wikipedia"
+                target="_blank"
+              >
+                языки программирования </a
+              >,
+              <a
+                class="about-web__link __link"
+                href="https://ru.wikipedia.org/wiki/База_данных"
+                title="Ссылка ведёт на wikipedia"
+                target="_blank"
+                >базы данных </a
+              >, системы и платформы
+              <a
+                class="about-web__link __link"
+                href="https://ru.wikipedia.org/wiki/Система_управления_содержимым"
+                title="Ссылка ведёт на wikipedia"
+                target="_blank"
+                >CMS</a
+              >
+              и другие технологии, которые позволяют создавать веб-сайты, приложения и магазины. Современные веб-технологии
+              предоставляют разработчикам неограниченные возможности для реализации своих идей. Давайте узнаем подробнее об одной
+              из них!
+            </p>
+          </div>
+        </section>
+        <section class="java-script java-script__container">
+          <h2 class="java-script__title __h2" id="java_script">JavaScript</h2>
+          <div class="java-script__body">
+            <p class="java-script__text __text">
+              Если
+              <a
+                class="java-script__link __link"
+                href="https://developer.mozilla.org/ru/docs/Web/HTML"
+                title="Ссылка ведёт на developer.mozilla.org"
+                target="_blank"
+                >HTML
+              </a>
+              определяет структуру и контент веб-страницы, а
+              <a
+                class="java-script__link __link"
+                href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics"
+                title="Ссылка ведёт на developer.mozilla.org"
+                target="_blank"
+                >CSS
+              </a>
+              задаёт формат и внешний вид, то
+              <a
+                class="java-script__link __link"
+                href="https://ru.wikipedia.org/wiki/JavaScript"
+                title="Ссылка ведёт на wikipedia"
+                target="_blank"
+                >JavaScript</a
+              >
+              добавляет интерактивность и создаёт богатые веб-приложения. Другими словами, JavaScript — язык программирования,
+              широко используемый для реализации взаимодействия пользователя с веб-сайтами и приложениями. Однако, под общим
+              термином "JavaScript", в контексте веб-браузера, понимаются несколько очень разных вещей. Одна из них - это базовый
+              язык программирования
+              <a
+                class="java-script__link __link"
+                href="https://ru.wikipedia.org/wiki/ECMAScript"
+                title="Ссылка ведёт на wikipedia"
+                target="_blank"
+                >(ECMAScript)</a
+              >.
+            </p>
+            <h3 class="java-script__subtitle __h3" id="ECMA_script">Что попадает под понятие ECMAScript?</h3>
+            <p class="java-script__text __text">
+              <b>ECMAScript</b> — это встраиваемый расширяемый не имеющий средств ввода-вывода язык программирования, используемый
+              в качестве основы для построения других скриптовых языков.
+            </p>
+            <p class="java-script__subtext">Кроме прочего, ECMAScript определяет:</p>
+            <ul class="java-script__list">
+              <li class="java-script__item">
+                Синтаксис языка (правила парсинга, ключевые слова, порядок выполнения, инициализацию объекта литерала...)
+              </li>
+              <li class="java-script__item">
+                Механизм обработки ошибок (исключения, <b>try/catch</b> оператор,возможность создавать новые типы ошибок)
+              </li>
+              <li class="java-script__item">Типы данных (логические, числа, строки, функции, объекты...)</li>
+              <li class="java-script__item">
+                Глобальный объект. В браузерах глобальным объектом является window, но ECMAscript определяет только те
+                <a
+                  class="java-script__link __link"
+                  href="https://ru.wikipedia.org/wiki/API"
+                  title="Ссылка ведёт на wikipedia"
+                  target="_blank"
+                  >APIs</a
+                >, которые не являются специфическими для браузера, как <b>parseInt</b>, <b>parseFloat</b>, <b>decodeURI</b>,
+                <b>encodeURI</b>...
+              </li>
+              <li class="java-script__item">Механизм прототипного наследования</li>
+              <li class="java-script__item">
+                Встроенные объекты и функции (<b>JSON</b>, <b>Math</b>, <b>Array.prototype</b> методы, методы
+                <a
+                  class="java-script__link __link"
+                  href="https://spec-zone.ru/RU/XCode/documentation/General/Conceptual/DevPedia-CocoaCore/Introspection.html"
+                  title="Ссылка ведёт на spec-zone.ru"
+                  target="_blank"
+                  >самоанализа объекта</a
+                >...)
+              </li>
+              <li class="java-script__item">Строгий режим</li>
+            </ul>
+            <h3 class="java-script__subtitle __h3" id="java_script_and_java">
+              Не следует путать JavaScript c языком программирования Java!
+            </h3>
+            <p class="java-script__text __text">
+              JavaScript и
+              <a
+                class="java-script__link __link"
+                href="https://ru.wikipedia.org/wiki/Java"
+                title="Ссылка ведёт на wikipedia"
+                target="_blank"
+                >Java</a
+              >
+              похожи в одних отношениях, но фундаментально отличны в других. JavaScript напоминает Java, но не имеет статической
+              типизации и строгой проверки типов, которыми обладает Java. JavaScript следует большей части синтаксиса Java в
+              выражениях, соглашениях об именовании и основного потока управления конструкциями, поэтому он был переименован из
+              LiveScript в JavaScript.
+            </p>
+            <p class="java-script__text __text">
+              В отличие от системы скомпилированных классов Java, построенной на объявлениях, JavaScript поддерживает систему
+              исполнения, основанную на небольшом числе типов данных, представляющих числовые, логические и строковые значения.
+              JavaScript имеет объектную модель на базе прототипов вместо более общей модели на базе классов. Модель объектов на
+              базе прототипов предоставляет динамическое наследование, т.е. то, что наследуется, может отличаться для отдельных
+              объектов. JavaScript также поддерживает функции без каких-либо специальных декларативных требований. Функции могут
+              быть свойствами объектов, выполняться как свободно-типизированные методы.
+            </p>
+            <p class="java-script__text __text">
+              По сравнению с Java, JavaScript является языком с очень свободной формой. Вам не надо объявлять переменные, классы и
+              методы. Вам не надо беспокоиться о том, являются ли методы публичными (public), приватными (private) или защищёнными
+              (protected), а также вам не надо реализовывать интерфейсы. Переменные, параметры и возвращаемые функциями типы не
+              являются явно типизированными.
+            </p>
+          </div>
+        </section>
+        <section class="task task__container">
+          <h2 class="task__title __h2" id="practice">Как насчёт практики?</h2>
+          <div class="task__body">
+            <p class="task__text">Рассмотрим задачу с такими условиями:</p>
+            <ol class="task__list">
+              <li>Необходимо разработать функцию <b>getDayInfo(date)</b>, которая возвращает информацию о выбранной дате.</li>
+              <li>Результатом функции должен быть форматированный текст:</li>
+            </ol>
+            <pre class="task__code code">
+<span class="code__variable">&lt;день недели&gt;</span>, <span class="code__variable">&lt;№ недели&gt;</span> неделя <span class="code__variable">&lt;месяц&gt;</span> <span class="code__variable">&lt;год&gt;</span> года</pre>
+
+            <p>Пример:</p>
+            <pre class="task__code code">
+<span class="code__function"><span class="code__title">getDayInfo</span><span class="code__params">(“<span class="code__number">01.01</span>.<span class="code__number">2022</span>”)</span></span> <span class="code__comment">// =&gt; Суббота, 1 неделя Января 2022 года</span>
+<span class="code__function"><span class="code__title">getDayInfo</span><span class="code__params">(“<span class="code__number">15.12</span>.<span class="code__number">2021</span>”)</span></span> <span class="code__comment">// =&gt; Среда, 3 неделя Декабря 2021 года</span></pre>
+            <p class="task__text">Давайте назовём нашу функцию: исчерпывающая информация о дате!</p>
+            <div class="task__function function-task">
+              <h3 class="function-task__title __h3">Исчерпывающая информация о дате</h3>
+              <div class="function-task__body">
+                <div class="function-task__content">
+                  <label for="set_day_info">Введите дату:</label>
+                  <input class="function-task__input-set" type="date" name="set_day_info" id="set_day_info" />
+
+                  <p class="function-task__text">Результат:</p>
+                  <span class="function-task__get-info"></span>
+                  <button class="function-task__btn" type="button">Жмякни меня</button>
+                </div>
+                <div class="function-task__img">
+                  <picture
+                    ><source srcset="img/js/power.webp" type="image/webp" />
+                    <img src="img/js/power.png" alt="Сцена из звездных войнов, демонстрирующая силу JavaScript."
+                  /></picture>
+                </div>
+              </div>
+            </div>
+            <div class="task__how-works">
+              <p class="task__text">Разберёмся, как это работает:</p>
+
+              <pre class="task__code code">
+<span class="code__comment">/*Создадим массивы из человеко-понятных наименований месяца и дня недели*/</span> 
+<span class="code__keyword">let</span> months = [
+	<span class="code__string">'Января'</span>,
+	<span class="code__string">'Февраля'</span>, 
+	<span class="code__string">'Марта'</span>,
+	<span class="code__string">'Апреля'</span>,
+	<span class="code__string">'Мая'</span>,
+	<span class="code__string">'Июня'</span>,
+	<span class="code__string">'Июля'</span>,
+	<span class="code__string">'Августа'</span>,
+	<span class="code__string">'Сентября'</span>,
+	<span class="code__string">'Октября'</span>,
+	<span class="code__string">'Ноября'</span>,
+	<span class="code__string">'Декабря'</span>
+];
+
+<span class="code__keyword">let</span> days = [
+	<span class="code__string">'Воскресенье'</span>, 
+	<span class="code__string">'Понедельник'</span>, 
+	<span class="code__string">'Вторник'</span>, 
+	<span class="code__string">'Среда'</span>, 
+	<span class="code__string">'Четверг'</span>, 
+	<span class="code__string">'Пятница'</span>, 
+	<span class="code__string">'Суббота'</span>
+];
+
+<span class="code__comment">/*Начинаем творить магию, встроенными заклинаниями JavaScript*/</span> 
+<span class="code__function"><span class="code__keyword">function</span> <span class="code__title">getDayInfo</span>(<span class="code__params">date</span>) </span>{
+<span class="code__comment">/*Принятый аргумент от input'a с type="date" присваиваем параметру date*/</span> 
+ <span class="code__built-in">date</span> = dateInputSet.value;
+ <span class="code__comment">Создаёт объект Date</span> 
+ <span class="code__keyword">let</span> selectedDate = <span class="code__keyword">new</span> <span class="code__built-in">Date</span>(<span class="code__built-in">date</span>);
+ <span class="code__comment">/*Создаём переменные для дня недели, месяца, года и про неделю, не забываем*/</span> 
+ <span class="code__comment">/*И получаем индекс для обращения к массиву посредством методов getDay(),getMonth() и т.д.*/</span> 
+ <span class="code__keyword">let</span> day = days[selectedDate.<span class="code__built-in">getDay()</span>];
+ <span class="code__keyword">let</span> month = months[selectedDate.<span class="code__built-in">getMonth()</span>];
+ <span class="code__keyword">let</span> year = selectedDate.<span class="code__built-in">getFullYear()</span>;
+ <span class="code__keyword">let</span> week = Math.ceil((selectedDate.<span class="code__built-in">getDate()</span>) / <span class="code__number">7</span>);
+ <span class="code__comment">/*Формируем строку результата*/</span> 
+ dateInputGet.innerText  = day +<span class="code__string">', '</span> + week + <span class="code__string">' '</span> + <span class="code__string">'неделя '</span> + month +<span class="code__string">' '</span>+ year+<span class="code__string">' года'</span>;
+}
+</pre>
+            </div>
+          </div>
+        </section>
+        <button class="btn-up" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M236.5.6c-26.6 2.9-42.8 6.1-61.7 12.5C98.9 38.4 38.4 98.9 13.1 174.8c-19.9 59.4-16.8 127.5 8.4 184.4C57.6 440.7 132.7 497.3 221 509.7c17.2 2.4 52.8 2.4 70 0 82-11.5 151.4-60 191.3-133.7 32.3-59.8 38.6-135.5 16.7-201.1C468.2 83 387.5 15.7 292 2.5 280.9 1 244.7-.3 236.5.6zm28.3 84.9c2.6 1.1 26.8 24.7 80.5 78.3 42.3 42.2 78 78.4 79.3 80.5 3.1 4.7 4 11.7 2.4 17.7-1 3.9-3.7 7-19.3 22.9-11.3 11.3-19.7 19-22.2 20.2-4.9 2.3-12.3 2.4-17.3.4-2.5-1.1-14.6-12.4-36.4-34.2l-32.7-32.7-.3 85.9-.3 86-2.2 4.2c-3.2 5.9-8.7 10-15 11.3-3.4.7-14.1 1-28.6.8-20.3-.3-23.6-.5-26.7-2.2-4.9-2.6-7.9-5.5-10.3-10.1-2.2-4-2.2-4.3-2.7-89.8l-.5-85.7-31 31.1c-17 17.1-32.7 32.2-34.8 33.5-4.7 3.1-11.7 4-17.7 2.4-3.9-1-7-3.6-23.7-20.3S86 265.9 85 262c-1.6-6-.7-13 2.4-17.7C91.4 238 243 87.3 247 85.6c4.6-2 13.1-2 17.8-.1z"
+            />
+          </svg>
+        </button>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__body">
+            <p class="footer__appeal">Не стесняйтесь обратиться ко мне:</p>
+            <ul class="footer__social-list social">
+              <li class="social__item">
+                <a class="social__link icon-telegram" href="https://t.me/NiAlK0" target="_blank"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link icon-instagram" href="https://www.instagram.com/nialk0" target="_blank"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link icon-email" href="mailto:nialko@nialko.ru" target="_blank"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link icon-github" href="https://github.com/NiAlKo" target="_blank"></a>
+              </li>
+            </ul>
+            <a class="footer__copy" href="https://legalacts.ru/kodeks/GK-RF-chast-4/razdel-vii/" target="_blank"> © NiAlK0 </a>
+          </div>
+        </div>
+      </footer>
+
+      <script src="js/app.min.js?_v=20220305131833"></script>
+    </div>
+  </body>
+</html>

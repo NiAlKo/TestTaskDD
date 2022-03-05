@@ -1,0 +1,66 @@
+/*!=================-COLORS-=================!*/
+:root {
+  --base-white: #ffffff;
+  --base-black: #000000;
+  --base-gray: #333333;
+  --base-red: #ae3939;
+  --base-blue: #09a2f5;
+
+  --light-bg: #f4f5f7;
+  --dark-bg: #1d1d1d;
+  --hover: #aa0f0f;
+
+  --code-bg: #f0f0f0;
+  --code-text: #444444;
+  --code-variable: #bc6060;
+  --code-comment: #888888;
+  --code-green: #397300;
+}
+
+body.theme-dark {
+  background-color: var(--dark-bg);
+  color: var(--base-white);
+  .header__menu {
+    &::after {
+      background-color: var(--dark-bg);
+    }
+  }
+  .theme-site {
+    & path {
+      fill: var(--base-white);
+    }
+    &__toggler {
+      border-color: var(--base-white);
+      &::before {
+        background-color: var(--base-white);
+      }
+    }
+  }
+  .menu__body {
+    background-color: var(--dark-bg);
+  }
+  .menu__link,
+  .menu__btn {
+    color: var(--base-white);
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--hover);
+      }
+    }
+  }
+  .menu__btn.__active {
+    color: var(--hover);
+  }
+  .menu__sub-link {
+    color: var(--base-black);
+  }
+  .menu__icon {
+    span {
+      background-color: var(--base-white);
+    }
+  }
+  .menu__sub-list {
+    background-color: var(--light-bg);
+    color: var(--base-black);
+  }
+}

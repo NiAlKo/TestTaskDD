@@ -1,0 +1,49 @@
+/**======================-FOOTER-=================*/
+.footer {
+  padding: 40px 15px 20px 15px;
+  &__container {
+  }
+
+  &__appeal {
+    margin-bottom: 15px;
+  }
+  &__body {
+    text-align: center;
+  }
+
+  &__copy {
+    color: inherit;
+    transition: color 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--hover);
+      }
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+.footer .footer__social-list {
+  margin-bottom: 15px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  &__link {
+    @media (any-hover: hover) {
+      &:hover::before {
+        color: var(--hover);
+      }
+    }
+    &:active::before {
+      opacity: 0.4;
+    }
+  }
+}

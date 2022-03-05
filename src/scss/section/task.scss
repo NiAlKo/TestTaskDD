@@ -1,0 +1,133 @@
+/**======================-TASK-=================*/
+.task {
+  &__container {
+  }
+
+  &__title {
+  }
+
+  &__body {
+  }
+
+  &__text {
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    padding-left: 50px;
+    list-style: decimal;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  &__code {
+  }
+
+  &__function {
+    padding: 30px 0;
+  }
+  &__how-works {
+  }
+}
+
+.function-task {
+  &__body {
+    display: flex;
+    align-items: center;
+    @media (max-width: ($md2 + px)) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 300px;
+  }
+  &__title {
+  }
+
+  &__input-set {
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 15px;
+    width: 250px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+  &__text {
+    margin-bottom: 5px;
+  }
+
+  &__get-info {
+    font-size: 0.9em;
+    height: 18px;
+    margin-bottom: 10px;
+  }
+
+  &__btn {
+    color: var(--base-white);
+    background-color: var(--base-red);
+    height: 50px;
+    padding: 0 15px;
+    border-radius: 10px;
+    max-width: 150px;
+    transition: background-color 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: var(--hover);
+      }
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  & > :not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &__img {
+  }
+}
+
+.code {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: var(--code-bg);
+  color: var(--code-text);
+  &__variable {
+    color: var(--code-variable);
+  }
+
+  &__function {
+  }
+
+  &__title {
+    color: var(--base-red);
+    font-weight: 700;
+  }
+
+  &__params {
+  }
+
+  &__number {
+    color: var(--base-red);
+  }
+
+  &__comment {
+    color: var(--code-comment);
+  }
+
+  &__keyword {
+    font-weight: 700;
+  }
+
+  &__string {
+    color: var(--base-red);
+  }
+
+  &__built-in {
+    color: var(--code-green);
+  }
+}

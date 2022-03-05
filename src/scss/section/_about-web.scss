@@ -1,0 +1,21 @@
+// /*!=================-ABOUT-WEB-=================!*/
+.about-web {
+  padding-bottom: 55px;
+  border-bottom: 2px solid var(--base-gray);
+  @media (max-width: ($md3 +px)) {
+    padding-bottom: 0;
+  }
+  &__container {
+  }
+
+  &__body {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+  &__link {
+  }
+}

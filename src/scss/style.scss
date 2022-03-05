@@ -1,0 +1,66 @@
+//**======================-ПЕРЕМЕННЫЕ-=================*/
+
+$min-width: 320px;
+$max-width: 1440;
+$maxWidthContainer: 1270;
+
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+// /**======================-МИКСИНЫ-=================*/
+
+@import "./base/settings";
+
+/**======================-ШРИФТЫ-=================*/
+// /**======================-ШРИФТЫ_ПОДКЛЮЧАЕМЫЕ-=================*/
+@import "./base/fonts";
+/**======================-ШРИФТЫ_ИКОНОЧНЫЕ-=================*/
+@import "./base/icons";
+// /**======================-ШРИФТЫ_ПО_УМОЛЧАНИЮ-=================*/
+@import "./base/typography";
+$font-family: "BalsamiqSans", sans-serif;
+//**======================-ПАЛИТРА-=================*/
+@import "./base/colors";
+
+//**======================-ОБНУЛЕНИЕ, ОБЩИЕ_ПАРАМЕТРЫ-=================*/
+@import "./base/reset";
+body {
+  @extend %all-text;
+  color: var(--base-black);
+  background-color: var(--light-bg);
+  @media (max-width: ($md1 + px)) {
+    &.__lock {
+      overflow: hidden;
+    }
+  }
+}
+
+//**======================-УПАКОВКА-=================*/
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+//**======================-ОСНОВНАЯ_СЕТКА-=================*/
+[class*="__container"] {
+  max-width: $maxWidthContainer + px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+[class*="__body"] {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  max-width: 1010px;
+}
+
+@import "./base/ui";
+//**======================-НЕЗАВИСИМЫЕ_БЛОКИ-=================*/
+
+//**======================-ПОДКЛЮЧЕНИЕ_СТИЛЕЙ-=================*/
+@import "./section/header";
+@import "./section/about-web";
+@import "./section/js";
+@import "./section/task";
+@import "./section/footer";

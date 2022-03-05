@@ -1,0 +1,44 @@
+/**======================-JAVA-SCRIPT-=================*/
+.java-script {
+  padding: 55px 15px;
+  border-bottom: 2px solid var(--base-gray);
+  @media (max-width: ($md3 +px)) {
+    padding: 35px 15px;
+  }
+  &__container {
+    background: url(../img/js/js.png) center no-repeat;
+  }
+
+  &__title {
+  }
+
+  &__body {
+  }
+
+  &__text {
+    text-indent: 40px;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+  }
+
+  &__subtitle {
+  }
+  &__subtext {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__list {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    padding-left: 30px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
